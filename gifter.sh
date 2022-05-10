@@ -1,9 +1,3 @@
-#!/usr/bin/env bash
-
-# Fedora SilverBlue / OSTree Linux with Toolbox
-ffmpeg="toolbox run --container fedora ffmpeg"
-
-# Standard Linux
 #ffmpeg="/usr/bin/env ffmpeg"
 
 uuid=$(uuidgen)
@@ -26,3 +20,4 @@ else
   echo "Input source video path: "
   read sourceVideoPath
   convertToGIF $sourceVideoPath
+fi
