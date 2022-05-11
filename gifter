@@ -6,7 +6,7 @@ ffmpeg="toolbox run --container fedora ffmpeg"
 # Standard Linux
 #ffmpeg="/usr/bin/env ffmpeg"
 
-uuid=$(uuidgen)
+uuid=$(uuidgen | cut -b -8)
 
 function convertToGIF () {
   if [[ -z $1 ]]; then
